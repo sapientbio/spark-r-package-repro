@@ -6,15 +6,16 @@ Author: Who wrote it
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: MIT + file LICENSE
+License: file LICENSE
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE, r6 = FALSE)
+RoxygenNote: 7.1.2
 Suggests: 
+    SparkR (>= 3.1.2),
     knitr,
     ggplot2,
     MASS (>= 7.3-55),
     rmarkdown,
-    SparkR (>= 3.1.2),
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
@@ -27,8 +28,9 @@ Imports:
     purrr (>= 0.3.4),
     R6 (>= 2.5.1),
     tibble (>= 3.1.7)
+VignetteBuilder: knitr
+Depends: 
+    R (>= 4.0)
+LazyData: true
 Remotes:
-  SparkR=apache/spark/R/pkg@v3.1.2
-RoxygenNote: 7.1.2
-Depends:
-  R (>= 4.0)
+    SparkR=apache/spark/R/pkg@v3.1.2
