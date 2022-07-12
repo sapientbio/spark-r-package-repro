@@ -1,3 +1,7 @@
+#' Test SparkR
+#'
+#' @return Spark Data Frame
+#' @export
 test_sparkr <- function() {
   print("Hello, world!")
   # Call to SparkR
