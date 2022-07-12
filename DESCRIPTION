@@ -14,3 +14,5 @@ Suggests:
 Remotes:
   SparkR=apache/spark/R/pkg@v3.1.2
 RoxygenNote: 7.1.2
+Depends:
+  R (>= 4.0)
